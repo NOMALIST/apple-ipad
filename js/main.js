@@ -5,10 +5,10 @@ basketStarterEl.addEventListener('click', (event) => {
   event.stopPropagation()
   if(basketEl.classList.contains('show') ) {
     // hide
-    basketEl.classList.remove('show')
+    hideBasket()
   } else {
     // show
-    basketEl.classList.add('show')
+    showBasket()
   }
 })
 
@@ -17,5 +17,13 @@ basketEl.addEventListener('click', (event) => {
 })
 
 window.addEventListener('click', () => {
-  basketEl.classList.remove('show')
+  hideBasket()
 })
+
+function showBasket() {
+  basketEl.classList.add('show')
+}
+
+function hideBasket() {
+  basketEl.classList.remove('show')
+}
