@@ -611,12 +611,42 @@ nav .menu li.active:hover a {
 .camera .stage figure {
   transform: translate(90px, 0);
 }
+.camera .stage figure video {
+  position: absolute;
+  top: 36px;
+  left: 76px;
+  --webkit-mask-image: url("../images/camera_video_mask.png");
+  mask-image: url("../images/camera_video_mask.png");
+}
+.camera .stage .controller--pause,
+.camera .stage .controller--play {
+  color: var(--color-link);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translate(428px, -134px) rotate(-3deg);
+}
+.camera .stage .controller--pause:hover,
+.camera .stage .controller--play:hover {
+  text-decoration: underline;
+}
+.camera .stage .controller--pause.hide,
+.camera .stage .controller--play.hide {
+  display: none;
+}
+.camera .stage .controller--pause img,
+.camera .stage .controller--play img {
+  width: 20px;
+  margin-top: -2px;
+}
 .camera .stage figcaption {
   width: 130px;
   height: 110px;
   background-image: url("../images/camera_hardware_caption.png");
   transform: translate(-116px, 383px);
 }
+
 
 /* Camera > Edit */
 .camera .edit .figures {
