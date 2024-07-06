@@ -863,8 +863,40 @@ nav .menu li.active:hover a {
   transform: translate(24px, 690px);
 }
 
-
-
+/* Privary */
+.privary {
+  margin-top: 238px;
+}
+.privary h1 {
+  width: 482px;
+  height: 237px;
+  margin-left: auto;
+  background-image: url("../images/privacy_headline.png");
+  position: relative;
+  z-index: 1;
+  transform: translate(57px, 0);
+}
+.privary .infos {
+  margin-top: 38px;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.privary figure {
+  transform: translate(-215px, -508px);
+}
+.privary figcaption .caption-apple-id {
+  width: 170px ;
+  height: 26px;
+  background-image: url("../images/privacy_caption_apple_id.png");
+  transform: translate(195px, -13px);
+}
+.privary figcaption .caption-touch-id {
+  width: 150px;
+  height: 31px;
+  background-image: url("../images/privacy_caption_touch_id.png");
+  transform: translate(533px, 485px);
+}
 
 
 @keyframes sprite-icon {
